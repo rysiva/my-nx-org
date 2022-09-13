@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/todos/feature-main/src",
+  "prefix": "my-nx-org",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/todos/feature-main"],
+      "options": {
+        "project": "libs/todos/feature-main/ng-package.json",
+        "tailwindConfig": "libs/todos/feature-main/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/todos/feature-main/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/todos/feature-main/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/todos/feature-main"],
+      "options": {
+        "jestConfig": "libs/todos/feature-main/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/todos/feature-main/**/*.ts",
+          "libs/todos/feature-main/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
