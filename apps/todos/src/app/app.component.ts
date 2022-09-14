@@ -1,12 +1,13 @@
-import { RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
   imports: [RouterModule],
-  selector: 'my-nx-org-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'todos-root',
+  template: `
+    <router-outlet></router-outlet>
+  `,
 })
 export class AppComponent {
   title = 'todos';

@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "my-nx-org",
+            "prefix": "todos",
             "style": "kebab-case"
           }
         ]

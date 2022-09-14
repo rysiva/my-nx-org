@@ -1,8 +1,8 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
+import { AppComponent } from './app/app.component';
 
 if (environment.production) {
   enableProdMode();
@@ -11,7 +11,15 @@ if (environment.production) {
 bootstrapApplication(AppComponent, {
   providers: [
     importProvidersFrom(
-      RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' })
+      RouterModule.forRoot([
+        {
+          path: '',
+          loadChildren: () =>
+            import('@my-nx-org/todos/feature-main').then(
+              lib => lib.routes
+            )
+        }
+      ], { initialNavigation: 'enabledBlocking' })
     ),
   ],
 }).catch((err) => console.error(err));
