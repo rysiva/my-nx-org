@@ -1,7 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/todos/feature-main/src",
-  "prefix": "my-nx-org",
+  "prefix": "todos",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
@@ -38,5 +38,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["scope:todos"]
 }

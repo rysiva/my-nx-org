@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/todos/src",
-  "prefix": "my-nx-org",
+  "prefix": "todos",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -83,5 +83,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["scope:todos"]
 }
