@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'todos-feature-main',
+  displayName: 'todo-feature-main',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/todos/feature-main',
+  coverageDirectory: '../../../coverage/libs/todo/feature-main',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

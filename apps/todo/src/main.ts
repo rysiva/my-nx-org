@@ -15,7 +15,7 @@ bootstrapApplication(AppComponent, {
         {
           path: '',
           loadChildren: () =>
-            import('@my-nx-org/todos/feature-main').then(
+            import('@my-nx-org/todo/feature-main').then(
               lib => lib.routes
             )
         }
