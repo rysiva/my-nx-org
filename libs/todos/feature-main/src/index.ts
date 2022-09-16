@@ -1,2 +1,2 @@
-export * from './lib/todos-feature-main/todos-feature-main.component';
+export * from './lib/pages/main/main.component';
 export { routes } from './lib/routes';
