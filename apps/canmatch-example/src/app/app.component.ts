@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [NxWelcomeComponent, RouterModule],
   selector: 'my-nx-org-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
   title = 'canmatch-example';
