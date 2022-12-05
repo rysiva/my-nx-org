@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "canmatch-example": "apps/canmatch-example",
+    "canmatch-example-e2e": "apps/canmatch-example-e2e",
     "todo": "apps/todo",
     "todo-e2e": "apps/todo-e2e",
     "todo-feature-main": "libs/todo/feature-main"
