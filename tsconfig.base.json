@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@my-nx-org/canmatch-example/feature-main": [
+        "libs/canmatch-example/feature-main/src/index.ts"
+      ],
       "@my-nx-org/todo/feature-main": ["libs/todo/feature-main/src/index.ts"]
     }
   },

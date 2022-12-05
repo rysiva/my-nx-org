@@ -4,6 +4,7 @@
   "projects": {
     "canmatch-example": "apps/canmatch-example",
     "canmatch-example-e2e": "apps/canmatch-example-e2e",
+    "canmatch-example-feature-main": "libs/canmatch-example/feature-main",
     "todo": "apps/todo",
     "todo-e2e": "apps/todo-e2e",
     "todo-feature-main": "libs/todo/feature-main"
