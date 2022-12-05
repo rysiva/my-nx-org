@@ -1,4 +1,5 @@
 {
+  "name": "todo-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/todo-e2e/src",
   "projectType": "application",

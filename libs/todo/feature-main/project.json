@@ -1,11 +1,12 @@
 {
+  "name": "todo-feature-main",
   "projectType": "library",
   "sourceRoot": "libs/todo/feature-main/src",
   "prefix": "todo",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/todo/feature-main"],
+      "outputs": ["{workspaceRoot}/dist/libs/todo/feature-main"],
       "options": {
         "project": "libs/todo/feature-main/ng-package.json",
         "tailwindConfig": "libs/todo/feature-main/tailwind.config.js"
@@ -22,7 +23,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/todo/feature-main"],
+      "outputs": ["{workspaceRoot}/coverage/libs/todo/feature-main"],
       "options": {
         "jestConfig": "libs/todo/feature-main/jest.config.ts",
         "passWithNoTests": true
